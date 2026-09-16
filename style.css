@@ -6,6 +6,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+     margin-top: 100px;
 }
 
 header {
@@ -97,3 +98,55 @@ header {
 .isOpen {
     transform: translateX(0);
 }
+
+body{
+   
+}
+
+.hero{
+    position: relative;
+
+    box-shadow: ;
+    h1{
+        width: 600px;
+    }
+
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-image: url(imagens/img-hero.png);
+    background-position: center ;
+    background-size: cover;
+    height: 550px;
+    gap: 30px;
+    .vermelho{
+        position: relative;
+        width: 800px;
+        height: auto;
+        display: block;
+    }
+    .frase{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        position: absolute;
+        color: #FFC548;
+        max-width: 720px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    span{
+        color: #FFC548;
+    }
+}
+
+
+
+   .varal{
+    background-image: url(imagens/hero2.png);
+   }
