@@ -21,7 +21,7 @@ header {
     background-repeat: no-repeat;
 
     .logo-toy {
-        width: 150px;
+        width: 140px;
         padding: 10px;
     }
 }
@@ -38,7 +38,7 @@ header {
 .hamburguer {
     display: none;
 
-    @media(max-width: 600px) {
+    @media(max-width: 700px) {
         display: flex;
 
         img {
@@ -52,7 +52,7 @@ header {
 .menuClose {
     display: none;
 
-    @media(max-width: 650px) {
+    @media(max-width: 700px) {
         display: flex;
         align-self: flex-end;
         border: 0;
@@ -69,8 +69,7 @@ header {
 .menu {
     display: flex;
     gap: 24px;
-
-    background-image: url(imagens/fundo-menu.png);
+    padding-right: 10px;
 
     a {
         font-size: 20px;
@@ -81,7 +80,8 @@ header {
         text-decoration: none;
     }
 
-    @media(max-width: 650px) {
+    @media(max-width: 700px) {
+        background-image: url(imagens/fundo-menu.png);
         position: fixed;
         transform: translateX(-100%);
         top: 0;
@@ -98,9 +98,153 @@ header {
     transform: translateX(0);
 }
 
-.hero{
+.hero {
     background-image: url(imagens/home-hero.png);
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    
-    
+    height: 550px;
+    margin-top: 100px;
+}
+
+.containerHero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    width: 620px;
+
+    h4 {
+        color: #FFD900;
+        font-weight: 800;
+        background-color: #E20025;
+        padding: 10px;
+        align-self: flex-start;
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 80px;
+    }
+
+    >img {
+        max-width: 450px;
+        padding-top: 10px;
+    }
+
+    p {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .azul-negrito {
+            color: #4493DD;
+            font-weight: 800;
+        }
+
+        .azul-italico {
+            color: #4493DD;
+            font-style: italic;
+        }
+    }
+
+    .botao {
+        position: relative;
+        display: flex;
+
+        @media(max-width: 520px) {
+            flex-direction: column;
+            align-self: flex-start;
+        }
+
+
+        .doação {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                position: relative;
+                z-index: 1;
+                width: 200px;
+                height: 50px;
+            }
+
+            .doar {
+                z-index: 2;
+                position: absolute;
+                color: #FFD900;
+                font-weight: 800;
+                text-decoration: none;
+                padding: 10px;
+
+                &:hover {
+                    color: #ffffff;
+                    transition: 0.5s;
+                }
+            }
+        }
+
+
+        .funcionamento {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                position: relative;
+                z-index: 1;
+                width: 250px;
+                height: 50px;
+            }
+
+            .funciona {
+                position: absolute;
+                z-index: 2;
+                color: #FFD900;
+                font-weight: 800;
+                text-decoration: none;
+                padding: 10px;
+
+                &:hover {
+                    color: #ffffff;
+                    transition: 0.5s;
+                }
+            }
+        }
+
+    }
+
+    @media(max-width: 650px) {
+        width: 100%;
+
+        h1 {}
+
+    }
+}
+
+.missao {
+    display: flex;
+    background-image: url(imagens/fundo-missao.png);
+    top: 1px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+
+    img {}
+
+    .containerMissao {
+
+        h4 {
+            width: 200px;
+            justify-content: center;
+            color: #FFD900;
+            font-weight: 800;
+            background-color: #5B9233;
+            padding: 10px;
+            align-self: flex-start;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+        }
+    }
 }
