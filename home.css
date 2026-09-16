@@ -97,3 +97,10 @@ header {
 .isOpen {
     transform: translateX(0);
 }
+
+.hero{
+    background-image: url(imagens/home-hero.png);
+    width: 100%;
+    
+    
+}
