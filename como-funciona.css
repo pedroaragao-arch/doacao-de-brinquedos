@@ -2,7 +2,11 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+}
+
+body {
     font-family: "Montserrat", sans-serif;
+
 }
 
 .montserrat-uniquifier {
@@ -102,40 +106,47 @@ header {
 }
 
 .hero {
+    margin-top: 60px;
     background-image: url(imagens/personagens.png);
     background-position: center;
     background-size: cover;
-    height: 82vh;
+    height: 85vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 25px;
-    .frase{
+    box-shadow: #000 (1, );
+
+    .frase {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .frase-vermelho{
+
+    .frase-vermelho {
         position: relative;
         width: 500px;
         height: auto;
         display: block;
     }
-    p{
+
+    p {
         position: absolute;
         color: #FFC548;
         max-width: 320px;
         font-size: 25px;
         font-weight: 700;
     }
+
     h1 {
         padding-top: 15%;
         font-size: 50px;
         font-weight: 700;
         max-width: 70%;
         color: #fff;
+
         span {
             color: #FFD900;
         }
@@ -148,33 +159,70 @@ header {
     background-size: cover;
     width: 100%;
     .como {
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-bottom: 32px;
         -webkit-text-stroke: 2px #E20025;
         color: #FFD900;
         font-size: 40px;
     }
 
-    .etp-1 {
+    .passo-a-passo {
         display: flex;
-        flex-direction: column;
-        max-width: 320px;
-        background-color: #77C0E1;
-        border: solid 5px #004E98;
-        border-radius: 15px;
-        padding: 20px;
-
-        .primeria {
+        justify-content: space-around;
+        align-items: center;
+        gap: 25px;
+        .etapa {
             display: flex;
-            align-items: center;
-            text-align: center;
-            gap: 2px;
-            color: #fff;
-            
-            .numero {
-                color: #fff;
-                background-color: #ffffff91;
-                border: solid 1px #fff;
-                border-radius: 50%;
+            flex-direction: column;
+            max-width: 320px;
+            background-color: #77C0E1;
+            border: solid 5px #004E98;
+            border-radius: 15px;
+            padding: 20px;
+            gap: 15px;
+
+            .primeiro {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 15px;
             }
+
+            p,
+            h1 {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 750;
+            }
+
+            .um {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                background-color: #ffffff3d;
+                border: solid 3px #fff;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+            }
+   
+        }
+
+        .dois{
+            background-color: #FFD900;
+            border: 5px solid #8B7700;
+        }
+        .tres{
+            background-color: #C52330;
+            border: 5px solid #6E0009;
+        }
+        .quatro{
+            background-color: #ACCC00;
+            border: 5px solid #687B03;
         }
     }
+
 }
+
