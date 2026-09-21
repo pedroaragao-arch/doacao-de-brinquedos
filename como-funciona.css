@@ -6,7 +6,6 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-
 }
 
 .montserrat-uniquifier {
@@ -83,7 +82,8 @@ header {
         font-weight: 900;
         color: #FFD900;
         -webkit-text-stroke: #004E98;
-        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 5px;
+        paint-order: stroke fill;
         text-decoration: none;
     }
 
@@ -107,7 +107,7 @@ header {
 
 .hero {
     margin-top: 60px;
-    background-image: url(imagens/personagens.png);
+    background-image: url(imagens/fundo-personagens.png);
     background-position: center;
     background-size: cover;
     height: 85vh;
@@ -117,7 +117,6 @@ header {
     align-items: center;
     text-align: center;
     gap: 25px;
-    box-shadow: #000 (1, );
 
     .frase {
         display: flex;
@@ -158,11 +157,14 @@ header {
     background-position: center;
     background-size: cover;
     width: 100%;
+    padding-bottom: 50px;
+
     .como {
         padding-top: 50px;
         padding-left: 50px;
         padding-bottom: 32px;
-        -webkit-text-stroke: 2px #E20025;
+        -webkit-text-stroke: 7px #E20025;
+        paint-order: stroke fill;
         color: #FFD900;
         font-size: 40px;
     }
@@ -172,7 +174,13 @@ header {
         justify-content: space-around;
         align-items: center;
         gap: 25px;
+        @media(max-width:650px){
+            display: flex;
+            flex-direction: column;
+        }
+
         .etapa {
+            position: relative;
             display: flex;
             flex-direction: column;
             max-width: 320px;
@@ -181,6 +189,13 @@ header {
             border-radius: 15px;
             padding: 20px;
             gap: 15px;
+            img{
+                position: absolute;
+                height: 85px;
+                width: 105px;
+                right: 0;
+                bottom: 0;
+            }
 
             .primeiro {
                 display: flex;
@@ -207,22 +222,82 @@ header {
                 width: 50px;
                 height: 50px;
             }
-   
+
         }
 
-        .dois{
+        .dois {
             background-color: #FFD900;
             border: 5px solid #8B7700;
         }
-        .tres{
+
+        .tres {
             background-color: #C52330;
             border: 5px solid #6E0009;
         }
-        .quatro{
+
+        .quatro {
             background-color: #ACCC00;
             border: 5px solid #687B03;
         }
     }
 
+}
+
+.nuvem {
+    background-image: url(imagens/nuvens.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    img{
+        position: relative;
+        height: 30%;
+        width: 100%;
+    }
+    h1 {
+        color: #FFD900;
+        font-size: 40px;
+        font-weight: 900;
+        -webkit-text-stroke: 7px #E20025;
+        paint-order: stroke fill;
+    }
+
+    p {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 900;
+        -webkit-text-stroke: 4px #004E98;
+        paint-order: stroke fill;
+    }
+}
+
+.brinquedo{
+    background-image: url(imagens/fundo-estrela.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.brinquedos{
+    padding-top: 55px;
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+    h1{
+        color: #fff;
+        -webkit-text-stroke: 8px #004E98;
+        paint-order: stroke fill;
+    }
+
+    img{
+
+        cursor: pointer;
+        transition: 1s;
+        &:hover{
+            transform: rotateX(180deg)
+        }
+    }
 }
 
