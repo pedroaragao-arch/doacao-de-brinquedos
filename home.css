@@ -329,7 +329,7 @@ header {
     width: 100%;
     height: 500px;
 
-    h1{
+    h1 {
         text-align: center;
         font-size: 50px;
         font-weight: 900;
@@ -340,7 +340,7 @@ header {
     }
 }
 
-.quadrados{
+.quadrados {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -352,7 +352,7 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    
+
 }
 
 .cubo {
@@ -362,40 +362,92 @@ header {
     text-align: center;
     color: #ffffff;
 
-    h2{
+    h2 {
         font-weight: 900;
     }
 
-    p{
+    p {
         font-weight: 700;
     }
 }
 
-.estado-do-brinquedo{
+.estado-do-brinquedo {
     background-image: url(imagens/fundo-estado.png);
-    justify-content: center;
+    justify-content: space-between;
+    display: flex;
     align-items: center;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 500px;
 
-    img{
+    img {
         width: 698px;
     }
 }
 
-.containerEstado{
+.containerEstado {
     display: flex;
-    
+    flex-direction: column;
+    margin-right: 80px;
+    z-index: 10;
     justify-content: center;
     align-items: flex-end;
     text-align: right;
-    h1{
+    width: 600px;
+
+    h1 {
         color: #FFC548;
         -webkit-text-stroke: #C52330;
         -webkit-text-stroke-width: 4px;
         font-weight: 900;
         font-size: 50px;
+        line-height: 45px;
     }
+
+    p {
+        color: white;
+        font-weight: 800;
+    }
+
+    .macha-verde {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            position: relative;
+            z-index: 1;
+            width: 700px;
+            margin-right: -20px;
+        }
+
+        .verde {
+            z-index: 2;
+            display: flex;
+            position: absolute;
+            color: white;
+            font-weight: 600;
+            width: 87%;
+            font-size: 22px;
+            margin-bottom: -10px;
+            margin-right: -20px;
+        }
+    }
+
+    .laranja{
+        font-weight: 800;
+        background-color: #FF962D;
+        padding: 10px;
+        align-self: flex-start;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+        margin-right: -80px;
+
+    }
+}
+
+.equipe{
+    
 }
