@@ -174,6 +174,9 @@ header {
         justify-content: space-around;
         align-items: center;
         gap: 25px;
+        @media(max-width: 1200px){
+            flex-wrap: wrap;
+        }
         @media(max-width:650px){
             display: flex;
             flex-direction: column;
@@ -298,6 +301,97 @@ header {
         &:hover{
             transform: rotateX(180deg)
         }
+    }
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-image: url(imagens/ondas.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.footerTodo{
+    padding-top: 120px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    @media(max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo{
+        width: 250px;
+
+    }
+    .Container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 45px;
+        p{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            max-width: 490px;
+        }
+    }
+
+    .Container2{
+        padding-top: 80px;
+        display: flex;
+        align-items: flex-start;
+        align-content: center;
+        gap: 45px;
+        .contato{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .redes{
+            display: flex;
+            flex-direction: flex-start;
+            gap: 40px;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        h1{
+            color: #fff;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        a,p{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+}
+
+.final{
+    border-top: 1px solid #fff;
+    background-color: #77C0E1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    h1{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
     }
 }
 
