@@ -157,7 +157,8 @@ header {
     background-position: center;
     background-size: cover;
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
+    position: relative;
 
     .como {
         padding-top: 50px;
@@ -174,12 +175,9 @@ header {
         justify-content: space-around;
         align-items: center;
         gap: 25px;
-        @media(max-width: 1200px){
+
+        @media(max-width: 1200px) {
             flex-wrap: wrap;
-        }
-        @media(max-width:650px){
-            display: flex;
-            flex-direction: column;
         }
 
         .etapa {
@@ -192,12 +190,17 @@ header {
             border-radius: 15px;
             padding: 20px;
             gap: 15px;
-            img{
+
+            .guardas {
+                width: 100px;
+            }
+
+            img {
                 position: absolute;
-                height: 85px;
-                width: 105px;
-                right: 0;
-                bottom: 0;
+                height: 65px;
+                width: 65px;
+                right: -25px;
+                bottom: -15px;
             }
 
             .primeiro {
@@ -247,17 +250,20 @@ header {
 }
 
 .nuvem {
-    background-image: url(imagens/nuvens.jpeg);
+    background-image: url(imagens/nuvem.png);
     background-position: center;
     background-size: cover;
     padding: 50px;
-    position: relative;
-    margin-bottom: 20px;
-    img{
+    position: absolute;
+    width: 100%;
+    top: 145%;
+
+    img {
         position: relative;
         height: 30%;
         width: 100%;
     }
+
     h1 {
         color: #FFD900;
         font-size: 40px;
@@ -275,63 +281,75 @@ header {
     }
 }
 
-.brinquedo{
-    background-image: url(imagens/fundo-estrela.png);
-    background-position: center;
-    background-size: cover;
+.brinquedo {
+    background-color: #D4E9F0;
 }
 
-.brinquedos{
-    padding-top: 55px;
+.brinquedos {
+    padding-top: 80px;
     display: flex;
     justify-content: space-around;
     gap: 25px;
     align-items: center;
     text-align: center;
-    h1{
+
+    h1 {
         color: #fff;
         -webkit-text-stroke: 8px #004E98;
         paint-order: stroke fill;
     }
 
-    img{
-
+    img {
         cursor: pointer;
         transition: 1s;
-        &:hover{
-            transform: rotateX(180deg)
-        }
     }
 }
 
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
-    background-image: url(imagens/ondas.png);
+    background-image: url(imagens/fundo-footer.png);
     background-position: center;
     background-size: cover;
     width: 100%;
+    position: absolute;
+    margin-top: -180px;
 }
-.footerTodo{
+
+.footerTodo {
     padding-top: 120px;
     padding-bottom: 50px;
     display: flex;
     justify-content: space-around;
-    @media(max-width: 768px){
+
+    @media(max-width: 1150px) {
         flex-direction: column;
         align-items: center;
-    }
-    .footer-logo{
-        width: 250px;
 
+        .container2 {
+            padding-top: 12px;
+        }
     }
-    .Container1{
+
+    .footer-logo {
+        width: 250px;
+        padding-top: 200px;
+    }
+
+    .Container1 {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 45px;
-        p{
+
+        @media(max-width:1150px) {
+            display: flex;
+            text-align: center;
+
+        }
+
+        p {
             color: #fff;
             font-size: 20px;
             font-weight: 700;
@@ -339,37 +357,72 @@ footer{
         }
     }
 
-    .Container2{
-        padding-top: 80px;
+    .Container2 {
+        padding-top: 250px;
         display: flex;
         align-items: flex-start;
-        align-content: center;
+        justify-content: center;
         gap: 45px;
-        .contato{
+
+        @media(max-width:1150px) {
+            padding-top: 30px;
+            align-items: center;
+        }
+
+        @media(max-width:650px) {
+            flex-direction: column;
+
+            .footerMenu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        .footerMenu {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            align-items: center;
         }
-        .redes{
+
+        .contato {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .redes {
             display: flex;
             flex-direction: flex-start;
             gap: 40px;
-            img{
+
+            @media(max-width:615px) {
+                text-align: center;
+                align-items: center;
+            }
+
+            img {
                 width: 40px;
                 height: 40px;
             }
         }
-        nav{
+
+        nav {
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
-        h1{
+
+        h1 {
             color: #fff;
             font-size: 30px;
             font-weight: 700;
         }
-        a,p{
+
+        a,
+        p {
             color: #fff;
             font-size: 20px;
             font-weight: 700;
@@ -378,7 +431,7 @@ footer{
     }
 }
 
-.final{
+.final {
     border-top: 1px solid #fff;
     background-color: #77C0E1;
     display: flex;
@@ -388,10 +441,15 @@ footer{
     gap: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
-    h1{
+
+    @media(max-width:1115px) {
+        text-align: center;
+        align-items: center;
+    }
+
+    h1 {
         color: #fff;
         font-size: 20px;
         font-weight: 700;
     }
 }
-
