@@ -118,6 +118,12 @@ header {
     text-align: center;
     gap: 25px;
 
+    @media(max-width: 700px) {
+        .hero-title {
+            font-size: 40px;
+        }
+    }
+
     .frase {
         display: flex;
         align-items: center;
@@ -153,7 +159,7 @@ header {
 }
 
 .etapas {
-    background-image: url(imagens/fundo-xadrez-vermelho.png);
+    background-image: url(imagens/Fundo.png);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -163,11 +169,20 @@ header {
     .como {
         padding-top: 50px;
         padding-left: 50px;
-        padding-bottom: 32px;
         -webkit-text-stroke: 7px #E20025;
         paint-order: stroke fill;
         color: #FFD900;
         font-size: 40px;
+    }
+
+    .aqui {
+        padding-left: 50px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 700;
+        -webkit-text-stroke: 2px #004E98;
+        paint-order: stroke fill;
+        padding-bottom: 32px;
     }
 
     .passo-a-passo {
@@ -197,10 +212,10 @@ header {
 
             img {
                 position: absolute;
-                height: 65px;
-                width: 65px;
-                right: -25px;
-                bottom: -15px;
+                height: 60px;
+                width: 60px;
+                right: -5px;
+                bottom: -3px;
             }
 
             .primeiro {
@@ -232,31 +247,25 @@ header {
         }
 
         .dois {
-            background-color: #FFD900;
+            background-color: #EBD035;
             border: 5px solid #8B7700;
         }
 
         .tres {
             background-color: #C52330;
-            border: 5px solid #6E0009;
+            border: 5px solid #831720;
         }
 
         .quatro {
-            background-color: #ACCC00;
-            border: 5px solid #687B03;
+            background-color: #5B9233;
+            border: 5px solid #284711;
         }
     }
 
 }
 
 .nuvem {
-    background-image: url(imagens/nuvem.png);
-    background-position: center;
-    background-size: cover;
-    padding: 50px;
-    position: absolute;
-    width: 100%;
-    top: 145%;
+
 
     img {
         position: relative;
@@ -281,44 +290,142 @@ header {
     }
 }
 
+.catalogo-brinquedos {
+    background-image: url(imagens/fundo-nuvem.png);
+
+    .classificacao-titulo {
+        padding-top: 50px;
+        color: #FFD900;
+        font-size: 40px;
+        font-weight: 900;
+    }
+}
+
 .brinquedo {
-    background-color: #D4E9F0;
+    position: relative;
+    background-color: #ffffff50;
+    border: 5px solid #fff;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .pequeno{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.classe{
+    background-color: #C52330;
+    padding: 15px;
+    border: 5px solid #831720;
+    border-radius: 5px;
+    p{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.carrinho {
+    background-color: #D3B339;
+    padding: 15px;
+    border: 5px solid #917B2A;
+    border-radius: 5px;
+    p{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.blocos{
+    background-color: #35ABE3;
+    padding: 15px;
+    border: 5px solid #126B96;
+    border-radius: 5px;
+    p{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.bola{
+    background-color: #5B9233;
+    padding: 15px;
+    border: 5px solid #284711;
+    border-radius: 5px;
+    p{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+    }
 }
 
 .brinquedos {
-    padding-top: 80px;
     display: flex;
     justify-content: space-around;
-    gap: 25px;
     align-items: center;
-    text-align: center;
+    gap: 25px;
 
-    h1 {
-        color: #fff;
-        -webkit-text-stroke: 8px #004E98;
-        paint-order: stroke fill;
-    }
-
-    img {
-        cursor: pointer;
-        transition: 1s;
+    @media(max-width: 1200px) {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
+.cards-brinquedos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    @media(max-width: 1200px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 200px;
+    h1{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .btn-doar{
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #004E98;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #004E98;
+            color: #FFD900;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
 
 footer {
     display: flex;
     flex-direction: column;
-    background-image: url(imagens/fundo-footer.png);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    position: absolute;
-    margin-top: -180px;
+    background-color: #77C0E1;
+    border-top: 2px solid #fff;
 }
 
 .footerTodo {
-    padding-top: 120px;
     padding-bottom: 50px;
     display: flex;
     justify-content: space-around;
@@ -334,7 +441,7 @@ footer {
 
     .footer-logo {
         width: 250px;
-        padding-top: 200px;
+        padding-top: 50px;
     }
 
     .Container1 {
@@ -358,10 +465,10 @@ footer {
     }
 
     .Container2 {
-        padding-top: 250px;
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        align-items: center;
         gap: 45px;
 
         @media(max-width:1150px) {
