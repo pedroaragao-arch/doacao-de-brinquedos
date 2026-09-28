@@ -265,7 +265,7 @@ header {
 }
 
 .nuvem {
-
+    padding-left: 30px;
 
     img {
         position: relative;
@@ -290,16 +290,86 @@ header {
     }
 }
 
-.catalogo-brinquedos {
-    background-image: url(imagens/fundo-nuvem.png);
+.conta-todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.catalogo-cont {
+    position: relative;
+    padding: 20px;
 
     .classificacao-titulo {
-        padding-top: 50px;
+        position: absolute;
         color: #FFD900;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 900;
+        -webkit-text-stroke: 7px #E20025;
+        paint-order: stroke fill;
+        top: 40px;
+        left: 80px;
+    }
+
+    .azul-escuro{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+    .frase-azul {
+        padding-left: 20px;
+        position: relative;
+        width: 600px;
+        height: auto;
+        display: block;
+    }
+
+    p {
+        top: 80px;
+        left: 80px;
+        width: 70%;
+        height: 100%;
+        position: absolute;
     }
 }
+
+.catalogo-brinquedos {
+    background-image: url(imagens/fundo-ceu.png);
+    width: 100%;
+    height: auto;
+}
+
+
+.veja {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 55px;
+    padding-left: 30px;
+    img {
+        position: absolute;
+        z-index: 1;
+    }
+
+    h1 {
+        padding-left: 12px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 700;
+        position: absolute;
+        z-index: 2;
+    }
+}
+
+.classificacao {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
 
 .brinquedo {
     position: relative;
@@ -310,7 +380,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    .pequeno{
+
+    .pequeno {
         width: 50px;
         height: 50px;
         position: absolute;
@@ -319,12 +390,13 @@ header {
     }
 }
 
-.classe{
+.classe {
     background-color: #C52330;
     padding: 15px;
     border: 5px solid #831720;
     border-radius: 5px;
-    p{
+
+    p {
         color: #fff;
         font-size: 20px;
         font-weight: 700;
@@ -336,31 +408,34 @@ header {
     padding: 15px;
     border: 5px solid #917B2A;
     border-radius: 5px;
-    p{
+
+    p {
         color: #fff;
         font-size: 20px;
         font-weight: 700;
     }
 }
 
-.blocos{
+.blocos {
     background-color: #35ABE3;
     padding: 15px;
     border: 5px solid #126B96;
     border-radius: 5px;
-    p{
+
+    p {
         color: #fff;
         font-size: 20px;
         font-weight: 700;
     }
 }
 
-.bola{
+.bola {
     background-color: #5B9233;
     padding: 15px;
     border: 5px solid #284711;
     border-radius: 5px;
-    p{
+
+    p {
         color: #fff;
         font-size: 20px;
         font-weight: 700;
@@ -379,42 +454,61 @@ header {
     }
 }
 
+.catalogo-t {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 150px;
+    padding: 50px;
+}
+
 .cards-brinquedos {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 25px;
+
     @media(max-width: 1200px) {
         flex-wrap: wrap;
         justify-content: center;
     }
 }
 
-.description{
+.description {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     max-width: 200px;
-    h1{
+
+    h1 {
         color: #fff;
         font-size: 20px;
         font-weight: 700;
         text-align: center;
     }
 
-    .btn-doar{
-        padding: 10px 20px;
+
+    .botao{
+        position: relative;
+        cursor: pointer;
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    .btn-doar {
+        border: solid 1px #004E98;
+        position: absolute;
+        padding: 5px 15px;
         font-size: 16px;
         font-weight: bold;
-        color: #004E98;
+        color: #fff;
         cursor: pointer;
-
-        &:hover {
-            background-color: #004E98;
-            color: #FFD900;
-            transition: all 0.3s ease-in-out;
-        }
+        top: 5px;
+        left: 35px;
+        background-color: #004E98;
     }
 }
 
