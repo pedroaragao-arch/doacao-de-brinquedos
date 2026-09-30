@@ -654,17 +654,12 @@ header {
 footer {
     display: flex;
     flex-direction: column;
-    background-image: url(imagens/fundo-footer.png);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    position: absolute;
-
+    background-color: #77C0E1;
+    border-top: 2px solid #fff;
 }
 
 .footerTodo {
-    padding-top: 80px;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-around;
 
@@ -679,6 +674,7 @@ footer {
 
     .footer-logo {
         width: 250px;
+        padding-top: 50px;
     }
 
     .Container1 {
@@ -694,7 +690,7 @@ footer {
         }
 
         p {
-            color: #ffffff;
+            color: #fff;
             font-size: 20px;
             font-weight: 700;
             max-width: 490px;
@@ -704,8 +700,8 @@ footer {
     .Container2 {
         display: flex;
         align-items: flex-start;
-        text-align: start;
-        align-content: center;
+        justify-content: center;
+        align-items: center;
         gap: 45px;
 
         @media(max-width:1150px) {
@@ -727,15 +723,14 @@ footer {
         .footerMenu {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-
+            align-items: center;
         }
 
         .contato {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            gap: 15px;
+            text-align: center;
+            gap: 20px;
         }
 
         .redes {
