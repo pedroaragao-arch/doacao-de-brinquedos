@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,
@@ -35,15 +35,187 @@
         <h1>SEU BRINQUEDO ESTÁ PRONTO
             PARA UMA <span>NOVA AVENTURA?</span></h1>
         <div class="frase">
-            <img class="vermelho" src="imagens/bloco-hero.png" alt="">
+            <img class="card-vermelho" src="imagens/bloco-hero.png" alt="">
             <p>Preencha algumas informações sobre a sua doação e ajude um brinquedo a encontrar um novo lar.</p>
         </div>
     </div>
-    <div class="varal">
 
+    <div class="dados">
+        <h1>RESPONDA PERGUNTAS:</h1>
+        <div class="dado">
+            <a href="#1">
+                <img src="imagens/dado 1.png" alt="">
+            </a>
+            <img src="imagens/dado 2.png" alt="">
+            <img src="imagens/dado 3.png" alt="">
+            <img src="imagens/dado 4.png" alt="">
+        </div>
     </div>
+    <div class="fundoform">
+        <img src="imagens/nuvem.png" alt="">
+        <form class="responder" action="">
 
-    <script src="formulario.js"></script>
+            <div class="vermelho" id="1">
+                <div class="formulario-titulo">
+                    <img class="d1" src="imagens/dado 1.png" alt="">
+                    <h1> QUEM ESTÁ FAZENDO A DOAÇÃO?</h1>
+                </div>
+                <div class="escrita">
+                    <label for="nomecompleto">Nome completo</label>
+
+                    <input type="text" required>
+
+
+                    <!-- campo e-mail -->
+                    <label for="E-mail">E-mail</label>
+
+                    <input type="text" required>
+
+                    <!-- campo de telefone -->
+                    <label for="Telefone">Telefone</label>
+
+                    <input type="text" required>
+                </div>
+            </div>
+
+            <img class="nuvem" src="imagens/Linha de nuvens.png" alt="">
+
+            <div class="verde" id="2">
+                <div class="t2">
+                    <img class="d2" src="imagens/dado 2.png" alt="">
+                    <h1 class="texto">CONTE-NOS SOBRE O BRINQUEDO.</h1>
+                </div>
+                <div class="linha1">
+                    <div class="tb">
+                        <label for="brinquedo">Qual o tipo de brinquedo?</label>
+                        <select id="brinquedo" name="brinquedo">
+                            <option value="" disabled selected>
+                                Tipo de Brinquedo
+                            </option>
+
+                            <option value="pelucia">Pelúcia</option>
+                            <option value="jogo">Jogo</option>
+                            <option value="boneco">Boneco</option>
+                            <option value="livro">Livro</option>
+                            <option value="casinha">Casinha</option>
+                            <option value="carrinho">Carrinho</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="contador">
+                        <h2>Qual a quantidade?</h2>
+
+                        <div class="junto">
+                            <button id="aumentar">+</button>
+                            <h1 id="contador">0</h1>
+                            <button id="diminuir">-</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <img class="nuvem" src="imagens/Linha de nuvens.png" alt="">
+
+            <div class="azul" id="3">
+                <div class="t3">
+                    <img class="d3" src="imagens/dado 3.png" alt="">
+                    <h1>SOBRE A ENTREGA.</h1>
+                </div>
+                <div class="caixa">
+                    <div class="casa">
+                        <img src="imagens/Icone-casa.png" alt="">
+                        <p><strong>Levar até um ponto de coleta</strong>
+                            Você escolhe o ponto mais próximo e leva sua doação até lá.</p>
+                    </div>
+                    <div id="caminhao-container" class="caminhao-container">
+                        <div class="caminhao">
+                            <img src="imagens/Icone-caminhão.png" alt="">
+                            <p><strong>Solicitar retirada</strong>
+                                Informe seu endereço e verificamos a disponibilidade.</p>
+                        </div>
+                        <div class="caminhao-escondido">
+                            <img src="imagens/cartão.png" alt="">
+                            <div class="truck">
+                                <h1>Seja encaminhado para nosso email e solicite</h1>
+                                <button>ENCAMINHAR</button>
+                            </div>
+                            <!-- fazer o resto -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <img class="nuvem" src="imagens/Linha de nuvens.png" alt="">
+
+            <div class="amarelo">
+                <div class="t4">
+                    <img class="d4" src="imagens/dado 4.png" alt="">
+                    <h1>CONFIRMAÇÃO.</h1>
+                </div>
+                <button>CONFIRMAR MINHA DOAÇÃO</button>
+                <div class="cadeado">
+                    <img src="imagens/cadeado.png" alt="">
+                    <p><strong>Ao confirmar, você concorda com nossas diretrizes</strong>.</p>
+                </div>
+            </div>
+
+        </form>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            <div class="footerTodo">
+
+                <div class="Container1">
+                    <div class="footerLogo">
+                        <img class="footer-logo" src="imagens/logo.png" alt="">
+                    </div>
+
+                    <div class="sobre">
+                        <p>“Donate a toy and chance a story” é o maior projeto de doações de brinquedos novos e usados
+                            no
+                            Brasil, conectado academias, empresas e voluntários para transbordar a vida de milhares de
+                            crianças.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="Container2">
+
+                    <nav class="footerMenu">
+                        <h1>LINKS RÁPIDOS</h1>
+                        <a href="#" class="footerLink">Home</a>
+                        <a href="#" class="footerLink">Como funcionamos</a>
+                        <a href="#" class="footerLink">Formulários de doações</a>
+                        <a href="#" class="footerLink">Pontos de coleta</a>
+                    </nav>
+
+                    <div class="contato">
+                        <h1>CONTATO</h1>
+                        <p>contato@donatetoy.com.br</p>
+                        <p>+55 16 99243-8760</p>
+                        <h1>REDES SOCIAIS</h1>
+                        <div class="redes">
+                            <a href="#"><img src="imagens/whtasapp.png" alt="WhatsApp"></a>
+                            <a href="#"><img src="imagens/instagram.png" alt="Instagram"></a>
+                            <a href="#"><img src="imagens/tiktok.png" alt="TikTok"></a>
+                            <a href="#"><img src="imagens/facebook.png" alt="Facebook"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="final">
+                <h1>Donate a toy and chance a story - Distribuindo sonhos desde 2019</h1>
+                <h1>2026 Donate toy - Todos os direitos reservados</h1>
+            </div>
+        </footer>
+        <script src="formulario.js"></script>
+        <script src="caminhao.js"></script>
+        <script src="contador.js"></script>
 </body>
 
 </html>

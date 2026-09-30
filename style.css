@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-     margin-top: 100px;
+    margin-top: 100px;
 }
 
 header {
@@ -19,7 +19,7 @@ header {
     background-image: url("imagens/fundo-header.png");
     background-size: cover;
     background-position: center;
-    
+
 
     .logo-toy {
         width: 140px;
@@ -99,16 +99,10 @@ header {
     transform: translateX(0);
 }
 
-body{
-   
-}
-
-.hero{
-    position: relative;
-
-    box-shadow: ;
-    h1{
-        width: 600px;
+.hero {
+    h1 {
+        width: 800px;
+        font-size: 43px;
     }
 
     align-items: center;
@@ -117,36 +111,489 @@ body{
     justify-content: center;
     flex-direction: column;
     color: white;
-    background-image: url(imagens/img-hero.png);
-    background-position: center ;
+    background-image: url(imagens/fundo-img.png);
+    background-position: center;
     background-size: cover;
-    height: 550px;
-    gap: 30px;
-    .vermelho{
+    height: 600px;
+
+    .card-vermelho {
+
         position: relative;
         width: 800px;
         height: auto;
         display: block;
+
     }
-    .frase{
+
+    .frase {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    p{
+
+    p {
         position: absolute;
         color: #FFC548;
         max-width: 720px;
         font-size: 25px;
         font-weight: 700;
     }
-    span{
+
+    span {
         color: #FFC548;
+    }
+}
+
+.dados {
+    H1 {
+        font-size: 43px;
+        padding: 20px;
+        color: #FFC548;
+        -webkit-text-stroke: #004E98;
+        -webkit-text-stroke-width: 10px;
+        paint-order: stroke fill;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    background-image: url(imagens/fundo_dado.png);
+}
+
+.dado {
+    height: 370px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 100px;
+
+}
+
+
+
+.responder {
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+
+    .formulario-titulo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .verde {
+        font-weight: 700;
+
+        .tb {
+            width: 50%;
+
+            #brinquedo {
+                height: 60px;
+            }
+        }
+
+        .contador {
+            text-align: center;
+            width: 50%;
+            height: 90px;
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .junto {
+
+                display: flex;
+                border: solid 2px;
+                padding: 6px;
+                border-radius: 12px;
+                justify-content: space-around;
+
+                #aumentar {
+                    width: 25%;
+                    background-color: #EADCD3;
+                    border-radius: 10px;
+                }
+
+                #contador {
+                    width: 40%;
+
+                }
+
+                #diminuir {
+                    width: 25%;
+                    background-color: #EADCD3;
+                    border: solid 1px;
+                    border-radius: 10px;
+                }
+            }
+
+        }
+
+        .d2 {
+            width: 30px;
+        }
+
+        .t2 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        color: #416825;
+
+        h2 {
+            color: black;
+        }
+
+        .linha1 {
+            color: black;
+            font-size: 20px;
+            padding-top: 10px;
+            display: flex;
+            gap: 12px;
+            justify-content: space-around;
+
+            select {
+
+                width: 100%;
+                height: 40px;
+
+                background-color: #eaded7;
+                border: 2px solid #aaa09a;
+                border-radius: 11px;
+
+                color: #88817c;
+                font-size: 13px;
+
+                padding: 0;
+                outline: none;
+            }
+
+            /* Cada opção */
+            option {
+                background-color: #eaded7;
+                color: #88817c;
+                padding: 12px;
+            }
+
+            /* Quando passar o mouse */
+            select:hover {
+                border-color: #3c702c;
+            }
+
+            /* Quando clicar */
+            select:focus {
+                border-color: #3c702c;
+            }
+        }
+    }
+
+    .vermelho {
+        color: #E20025;
+
+        .d1 {
+            width: 30px;
+        }
+
+        .escrita {
+            color: black;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 18px;
+
+            input {
+                padding: 12px;
+                border-radius: 12px;
+                border: 0;
+                border: solid 3px #9D908A;
+                color: #EADCD3;
+            }
+        }
     }
 }
 
 
 
-   .varal{
-    background-image: url(imagens/hero2.png);
-   }
+form {
+    background-color: #EADCD3;
+    width: 700px;
+    margin: 0 auto;
+    padding: 24px;
+    height: 1300px;
+}
+
+.nuvem {
+    padding: 30px;
+}
+
+.azul {
+    .t3 {
+
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .d3 {
+        width: 30px;
+    }
+
+    color: #004E98;
+
+    .caixa {
+        display: flex;
+        gap: 15px;
+    }
+
+    .casa {
+        border: solid 3px #C2B1A9;
+        display: flex;
+        width: 50%;
+        color: black;
+        border-radius: 10px;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .caminhao-container {
+        position: relative;
+        width: 50%;
+
+        .caminhao {
+            position: absolute;
+            border: solid 3px #C2B1A9;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            color: black;
+            border-radius: 10px;
+            padding: 10px;
+            gap: 5px;
+        }
+
+        .caminhao-escondido {
+            gap: 10px;
+            background-color: #EADCD3;
+            font-size: 10px;
+            color: black;
+            display: none;
+            position: absolute;
+            left: 0;
+            bottom: -106px;
+            border: 3px solid #C2B1A9;
+
+            .truck {
+                display: flex;
+                flex-direction: column;
+            }
+
+            button {
+                background-color: #004E98;
+                height: 30px;
+                width: 120px;
+                border-radius: 5px;
+                border: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.amarelo {
+    color: #DDAB3D;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .t4 {
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .d4 {
+        width: 30px;
+    }
+
+
+    button {
+        height: 90px;
+        width: 80%;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 10px;
+        background-color: #DDAB3D;
+        border: none;
+    }
+
+    .cadeado {
+        padding-top: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        img {
+            height: 30px;
+            width: 30px;
+        }
+
+        p {
+            color: black;
+            padding-top: 5px;
+        }
+    }
+}
+
+/* FOOTER */
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-image: url(imagens/fundo-footer.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    margin-top: -180px;
+}
+
+.footerTodo {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+
+    @media(max-width: 1150px) {
+        flex-direction: column;
+        align-items: center;
+
+        .container2 {
+            padding-top: 12px;
+        }
+    }
+
+    .footer-logo {
+        width: 250px;
+        padding-top: 200px;
+    }
+
+    .Container1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 45px;
+
+        @media(max-width:1150px) {
+            display: flex;
+            text-align: center;
+        }
+
+        p {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            max-width: 490px;
+        }
+    }
+
+    .Container2 {
+        padding-top: 250px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        gap: 45px;
+
+        @media(max-width:1150px) {
+            padding-top: 30px;
+            align-items: center;
+        }
+
+        @media(max-width:650px) {
+            flex-direction: column;
+
+
+            footerMenu {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        .contato {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .redes {
+            display: flex;
+            flex-direction: flex-start;
+            gap: 40px;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        a,
+        p {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+}
+
+.final {
+    border-top: 1px solid #fff;
+    background-color: #77C0E1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media(max-width:1115px) {
+        text-align: center;
+        align-items: center;
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+
+.fundoform {
+    background-color: #5990A9;
+
+    img {
+        width: 100%;
+    }
+}
