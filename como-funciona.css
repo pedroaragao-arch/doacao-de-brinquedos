@@ -349,6 +349,8 @@ header {
 
 .catalogo-brinquedos {
     background-image: url(imagens/fundo-ceu.png);
+    background-position: center;
+    background-size: cover;
     width: auto;
     height: auto;
 }
