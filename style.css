@@ -456,17 +456,12 @@ form {
 footer {
     display: flex;
     flex-direction: column;
-    background-image: url(imagens/fundo-footer.png);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    position: absolute;
-    margin-top: -180px;
+    background-color: #77C0E1;
+    border-top: 2px solid #fff;
 }
 
 .footerTodo {
-    padding-top: 120px;
-    padding-bottom: 50px;
+     padding-bottom: 50px;
     display: flex;
     justify-content: space-around;
 
@@ -481,7 +476,7 @@ footer {
 
     .footer-logo {
         width: 250px;
-        padding-top: 200px;
+        padding-top: 50px;
     }
 
     .Container1 {
@@ -504,7 +499,6 @@ footer {
     }
 
     .Container2 {
-        padding-top: 250px;
         display: flex;
         align-items: center;
         align-content: center;
@@ -592,6 +586,11 @@ footer {
 
 .fundoform {
     background-color: #5990A9;
+
+    .plumas{
+        height: 300px;
+        
+    }
 
     img {
         width: 100%;
