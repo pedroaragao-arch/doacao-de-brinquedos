@@ -1,6 +1,6 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -8,18 +8,12 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-.montserrat-uniquifier {
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-}
-
 header {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 5;
+    z-index: 10;
     border-bottom: 1px solid gray;
     background-image: url("imagens/fundo-header.png");
     background-size: cover;
@@ -43,8 +37,10 @@ header {
 
 .hamburguer {
     display: none;
+
     @media(max-width: 700px) {
         display: flex;
+
         img {
             width: 30px;
             height: 30px;
@@ -74,13 +70,14 @@ header {
     display: flex;
     gap: 24px;
     padding-right: 10px;
+
     a {
         font-size: 20px;
         font-weight: 900;
         color: #FFD900;
         -webkit-text-stroke: #004E98;
-        -webkit-text-stroke-width: 5px;
         paint-order: stroke fill;
+        -webkit-text-stroke-width: 8px;
         text-decoration: none;
     }
 

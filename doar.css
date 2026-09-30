@@ -1,12 +1,11 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: "Montserrat", sans-serif;
-    margin-top: 100px;
 }
 
 header {
@@ -14,12 +13,12 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 5;
+    z-index: 10;
     border-bottom: 1px solid gray;
     background-image: url("imagens/fundo-header.png");
     background-size: cover;
     background-position: center;
-
+    background-repeat: no-repeat;
 
     .logo-toy {
         width: 140px;
@@ -77,7 +76,8 @@ header {
         font-weight: 900;
         color: #FFD900;
         -webkit-text-stroke: #004E98;
-        -webkit-text-stroke-width: 2px;
+        paint-order: stroke fill;
+        -webkit-text-stroke-width: 8px;
         text-decoration: none;
     }
 

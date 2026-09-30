@@ -1,65 +1,102 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    min-width: 320px;
-    color: #fff;
-    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
-.cabecalho {
-    position: relative;
-    z-index: 1;
-    height: 70px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.65);
-    background: #b9d1ff url("imagens/Rectangle 2.png") center / cover repeat-x;
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid gray;
+    background-image: url("imagens/fundo-header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    .conteudo-cabecalho {
+    .logo-toy {
+        width: 140px;
+        padding: 10px;
+    }
+}
+
+.headerContainer {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburguer {
+    display: none;
+
+    @media(max-width: 700px) {
         display: flex;
-        width: min(100% - 48px, 1120px);
-        height: 100%;
-        margin-inline: auto;
-        align-items: center;
-        justify-content: space-between;
-    }
 
-    .link-marca {
-        display: block;
-        line-height: 0;
-    }
-
-    .marca {
-        display: block;
-        width: 106px;
-        height: auto;
-    }
-
-    .navegacao {
-        display: flex;
-        align-items: center;
-        gap: clamp(16px, 3vw, 34px);
-    }
-
-    .link-navegacao {
-        color: #ffe000;
-        font-size: 14px;
-        font-weight: 900;
-        text-decoration: none;
-        text-shadow: 2px 2px 0 #064b90, -1px -1px 0 #064b90;
-        text-transform: uppercase;
-
-        &:hover,
-        &:focus-visible {
-            color: #fff;
+        img {
+            width: 30px;
+            height: 30px;
+            padding: 0;
         }
     }
+}
+
+.menuClose {
+    display: none;
+
+    @media(max-width: 700px) {
+        display: flex;
+        align-self: flex-end;
+        border: 0;
+        background: transparent;
+
+        img {
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+    padding-right: 10px;
+
+    a {
+        font-size: 20px;
+        font-weight: 900;
+        color: #FFD900;
+        -webkit-text-stroke: #004E98;
+        paint-order: stroke fill;
+        -webkit-text-stroke-width: 8px;
+        text-decoration: none;
+    }
+
+    @media(max-width: 700px) {
+        background-image: url(imagens/fundo-menu.png);
+        position: fixed;
+        transform: translateX(-100%);
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        width: 50%;
+        height: 100vh;
+        flex-direction: column;
+        border-right: 1px solid gray;
+    }
+}
+
+.isOpen {
+    transform: translateX(0);
 }
 
 .banner {
